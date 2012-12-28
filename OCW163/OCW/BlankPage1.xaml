@@ -1,0 +1,53 @@
+﻿<Page
+    x:Class="OCW.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OCW"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Width="250" Height="250" >
+            <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}" >
+                <Image  Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}" Source="Assets/OCWlogo.png"/>
+            </Border>
+            <StackPanel VerticalAlignment="Bottom" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+                <TextBlock Text="Title" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Style="{StaticResource TitleTextStyle}" Height="60" Margin="15,0,15,0"/>
+                <TextBlock Text="Subtitle" Foreground="{StaticResource ListViewItemOverlaySecondaryForegroundThemeBrush}" Style="{StaticResource CaptionTextStyle}" TextWrapping="NoWrap" Margin="15,0,15,10"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Height="110" Width="320" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}" Width="110" Height="110">
+                <Image  Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}" Source="Assets/OCWsmallLogo.png"/>
+            </Border>
+            <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
+                <TextBlock Text="Title" Style="{StaticResource TitleTextStyle}" TextWrapping="NoWrap"/>
+                <TextBlock Text="Subtitle" Style="{StaticResource CaptionTextStyle}" TextWrapping="NoWrap"/>
+                <TextBlock Text="Description" Style="{StaticResource BodyTextStyle}" MaxHeight="60"/>
+            </StackPanel>
+        </Grid>
+
+        <Grid Height="110" Margin="12,116,0,542">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}" Width="110" Height="110">
+                <Image Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}" Source="Assets/OCWlogo.png"/>
+            </Border>
+            <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
+                <TextBlock Style="{StaticResource TitleTextStyle}" TextWrapping="NoWrap" Text="Title"/>
+                <TextBlock Style="{StaticResource CaptionTextStyle}" TextWrapping="NoWrap" Text="subTitle"/>
+                <TextBlock Text="Description" Style="{StaticResource BodyTextStyle}" MaxHeight="60"/>
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</Page>

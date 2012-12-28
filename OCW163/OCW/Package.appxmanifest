@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="017e0fe0-a792-4d65-84e1-5878a14f24ba" Publisher="CN=yangqinjiang17" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>OCW</DisplayName>
+    <PublisherDisplayName>yangqinjiang17</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="OCW.App">
+      <VisualElements DisplayName="OCW 163" Logo="Assets\OCWlogo.png" SmallLogo="Assets\OCWsmallLogo.png" Description="OCW 163" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" ShortName="OCW163" WideLogo="Assets\WidthLogo.png" />
+        <SplashScreen Image="Assets\OCWSplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
